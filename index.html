@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versado</title>
+    <link rel="stylesheet" href="versado.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <body>
+        <header class="menu">
+            <ul>
+                <li>
+                    <a href="" class="lista">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="lista">
+                        Onde comprar
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="lista">
+                        <img class="logo" src="imagens/logo.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="lista">
+                        Contato
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="lista">
+                        Sobre nós
+                    </a>
+                </li>
+            </ul>
+        </header>
+        
+
+    <div class="text">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <p> Mais vendidos no momento</p>
+    </div>
+    
+    <div class="container">
+       
+        <div class="fotos">
+
+            <img class="foto" src="imagens/panda.png">
+
+            <img class="foto" src="imagens/caderno_júliainterna.png">
+
+            <img class="foto" src="imagens/apontador.png">
+
+            <img class="foto" src="imagens/tesoura_eduarda.JPG">
+
+            <img class="foto" src="imagens/borrachas_eduardaa.jpg">
+
+        </div>
+    </div>
+<div class="botao" >
+    <p> Clique aqui e vá as compras</p>
+    
+    <button class="nosso">Nosso e-commerce</button>
+
+</div>
+<footer class="rodape">
+    <div>
+        <img class="logo2" src="imagens/logo.png" alt="logo2">
+    </div>
+    <div>
+        <ul>
+            <li>
+                <a class="  ">
+                    <img class="icone" src="imagens/twitter.png" alt="twt">
+                </a>
+                <a class="icone">
+                    <img class="icone" src="imagens/insta.png" alt="inst">
+                </a>
+                <a class="icone">
+                    <a>
+                        <img class="icone" src="imagens/discord.png" alt="disc">
+                    </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p class="copy">Copyright ©️ 2023 Versado | All Rights Reserved</p>
+    </div>
+</footer>
+    </div>
+    <!-- Pop-up Container -->
+    <div class="popup-caixa" id="popup">
+        <div class="popup-conteudo">
+            <span class="fechar" onclick="fecharPopup()">&times;
+            </span>
+
+            <!-- Pop-up -->
+            <div class="popup-background" id="popupBackground">
+                <div class="popup">
+                    <h2>CADASTRE-SE AGORA E GANHE 15% DE DESCONTO</h2>
+                    <div class="abraco">
+                        <div class="input-container">
+                            <label for="nome">Nome:</label>
+                            <input type="nome" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-container">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="input-container">
+                            <button class=dudona onclick="closePopup()">Inscrever-se</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function openPopup() {
+                    document.getElementById("popupBackground").style.display = "block";
+                }
+
+                function closePopup() {
+                    document.getElementById("popupBackground").style.display = "none";
+                }
+            </script>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        // Função para abrir o pop-up
+        function abrirPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        // Função para fechar o pop-up
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+        setTimeout(function () {
+            abrirPopup();
+        }, 5000);
+
+       
+    </script>
+</body>
+
+</html>
